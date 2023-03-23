@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio JavaScript</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Lista de Tarefas</title>
 </head>
+
 <body>
-    <h1>Formulário</h1>
-    <form id="meuForm">
-      <label for="campoA">Campo A:</label>
-      <input type="number" id="campoA" name="campoA"><br><br>
+  <h1>Lista de Tarefas</h1>
+  <form id="task-form">
+    <label for="task-input">Adicionar Tarefa:</label>
+    <input type="text" id="task-input" name="task-input">
+    <button type="submit" id="add-task">Adicionar</button>
+  </form>
 
-      <label for="campoB">Campo B:</label>
-      <input type="number" id="campoB" name="campoB"><br><br>
+  <div>
+    <ul id="task-list">
+      <!-- os itens da lista -->
+    </ul>
 
-      <button type="submit">Enviar</button>
-    </form>
-    <div id="mensagem"></div>
+  </div>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
